@@ -23,8 +23,8 @@
 ``` bash
 
 {
-  "usingComponents": {
-    "v-picker": "/components/picker/picker"
+  'usingComponents': {
+    'v-picker': '/components/picker/picker'
   }
 }
 
