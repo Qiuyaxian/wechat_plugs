@@ -24,7 +24,7 @@
 
 {
   'usingComponents': {
-    'v-picker': '/components/picker/picker'
+    'v-picker': ''
   }
 }
 
