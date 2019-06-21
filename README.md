@@ -8,13 +8,13 @@
 {
 	"title": String, /* 标题 */
 	"disabled": Boolean, /* 是否禁用 */
-	"datas": Array => /* 数据 */
-	"item": Object => /* 子项数据 */
-	"index": null => /* 索引 */
-	"mode": String => /* picker模式 */
-	"key": String => /* 多例滚动选择关联的key值 */
-	"start": String => /* 开始时间 */
-	"end": String => /* 结束时间 */
+	"datas": Array, /* 数据 */
+	"item": Object, /* 子项数据 */
+	"index": null, /* 索引 */
+	"mode": String, /* picker模式 */
+	"key": String, /* 多例滚动选择关联的key值 */
+	"start": String, /* 开始时间 */
+	"end": String /* 结束时间 */
 }
 
 ```
