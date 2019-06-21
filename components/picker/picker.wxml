@@ -1,0 +1,31 @@
+<view class=''>
+    <block wx:if='{{ mode == "selector" }}'>
+         <picker disabled='{{ disabled }}' bindchange='_onChange' mode='{{ mode }}' value='{{ index }}' range="{{array}}">
+            <slot />
+         </picker>
+    </block>
+ 
+    <block wx:elif='{{ mode == "multiSelector" }}'>
+         <picker disabled='{{ disabled }}' bindchange='_onChange' bindcolumnchange='_onColumnChange' mode='{{ mode }}' range-key='{{ key }}' value='{{ index }}' range="{{array}}">
+            <slot />
+         </picker>
+    </block>
+
+    <block wx:elif='{{ mode == "date" }}'>
+         <picker disabled='{{ disabled }}' bindchange='_onChange' mode='{{ mode }}' value='{{ index }}' start='{{ startTime }}' end='{{ endTime }}'>
+            <slot />
+         </picker>
+    </block>
+
+    <block wx:elif='{{ mode == "city" }}'>
+         <picker disabled='{{ disabled }}' bindchange='_onChange' bindcolumnchange='_onColumnChange' mode='multiSelector' range-key='name' value='{{ multiAddress }}' range="{{ addressDefault }}">
+            <slot />
+         </picker>
+    </block>
+
+    <block wx:else>
+         <picker disabled='{{ disabled }}' bindchange='_onChange' mode='{{ mode }}' value='{{ index }}'>
+            <slot />
+         </picker>
+    </block>
+</view>

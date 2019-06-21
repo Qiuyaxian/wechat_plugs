@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <v-picker bind:onChange='bindMultiPickerChange' bind:onColumnChange='bindMultiPickerColumnChange' datas='{{ datas }}' mode='city' key='key' item='{{ multiResult }}' class='width'>
+    <view class="" wx:if="{{ multiResult[2] && multiResult[2].value != '' }}">{{ multiResult[0].name }}-{{ multiResult[1].name }}-{{ multiResult[2].name }}</view>
+    <view class="" wx:elif="{{ multiResult[1] && multiResult[1].value != '' }}">{{ multiResult[0].name }}-{{ multiResult[1].name }}</view>
+    <view class="" wx:elif="{{ multiResult[0] && multiResult[0].value != '' }}">{{ multiResult[0].name }}</view>
+    <view wx:else class="">请选择</view>
+  </v-picker>   
+</view>
