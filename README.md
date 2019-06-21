@@ -18,11 +18,12 @@
 }
 
 ```
+
 <h3>引入组件</h3>
 ``` bash
 {
   "usingComponents": {
-    "v-picker": "/components/picker/picker"
+    "v-picker": "组件路径"
   }
 }
 ```
