@@ -19,16 +19,6 @@
 
 ```
 
-<h3>引入组件</h3>
-``` bash
-
-{
-  'usingComponents': {
-    'v-picker': '/components/picker/picker'
-  }
-}
-
-```
 
 <h3>wxml中使用</h3>
 ``` bash
